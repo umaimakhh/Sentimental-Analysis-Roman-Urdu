@@ -4,6 +4,11 @@
 
 Social media text usually comprises short length messages, which typically contain a high percentage of abbreviations, typos, phonetic substitutions, and other informal ways of writing. The inconsistent manner of text representation poses challenges in performing Natural Language Processing and other forms of analysis on the available data. Therefore, to overcome these issues, the text requires to be normalized for effective processing and analysis, we will be doing a type of sentimental analysis named Fine-grained Sentiment Analysis. In this work, we will perform text analysis on how the Roman Urdu language sentences. We have used different machine learning techniques such as clustering along with FastText, Naive Bayes and SVM in order to explain the process of the data deeply.
 
+### Data set used
+
+
+link : https://archive.ics.uci.edu/ml/datasets/Roman+Urdu+Data+Set
+
 ### Data Preprocessing
 
 Before doing preprocessing, we cleaned the dataset for better quality. We dropped the null values, cleaned for missing column names and fixed incorrect values of sentiments (i.e changing negative into negative). We also did exploratory analysis on our original dataset to see the distribution of the words count. We found that neutral responses have 50% higher word count as compared with positive and negative responses. Thus , it is inferred that our data set is unbalanced.
@@ -24,4 +29,6 @@ While doing classification process for the both approaches, multinomial naive ba
 
 Overall, we observed by applying stemming into our sentences, the sentences produced of words that didnt have meaning on its own concluding that stemming does not apply correctly on Roman-Urdu as it does on English language. However, we applied the stemming technique and tested it over clustering and our classification models and came to the conclusion that the accuracy drastically dropped from our models. So we did not use datasets with stemmed sentences. Furthermore, from the analysis between balanced(removing neutral response) and unbalanced dataset(before removing neutral response) with removing stopwords, we determined that balanced datasets gave overall high accuracy in comparison to unbalanced datasets. Lastly, from the analysis of two classifiers, we determined SVM is working better overall for a Roman urdu dataset. From Kmeans clustering, we have our findings that Neutral sentiment analysis has the most accurate data clusters, while negative clusters were the most segregated. If we could get a balanced data set for Neutral response too then the model could have improved a lot with all three responses(Neutral,Positive,Negative).
 
-https://archive.ics.uci.edu/ml/datasets/Roman+Urdu+Data+Set
+
+#### Deepnode link or a better view: 
+https://deepnote.com/@umaima-khurshid-ahmad-a1fd/Sentimental-Analysis-on-Roman-Urdu-CYPLZfCxTjWGLxWzS2BaDg
